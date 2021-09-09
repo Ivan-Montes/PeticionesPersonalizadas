@@ -1,0 +1,193 @@
+/*########################*/
+/*  CSS3   */
+/*########################*/
+
+/*===========================*/
+/*         $INDEX           */
+/*===========================*/
+    /*
+    * INDEX..........Aqui estamos
+    * BASE............Etiquetas generales
+                    * Font-Face
+                    * Estilos Base
+    * LAYOUT.........Estructura
+    * MODULE.........Estilos reutilizables
+                    * Clases
+                    * Animaciones
+    * STATE.........Cambios de estado
+    */
+/*===========================*/
+/*        $BASE */
+/*===========================*/
+
+/*---------------------*\
+        $FONT-FACE
+\*---------------------*/
+@font-face {
+    font-family: "lato-medium";
+    src: url("fonts/LatoLatin-Medium.eot") format("embedded-opentype"),
+        url("fonts/LatoLatin-Medium.woff2") format("woff2"),
+        url("fonts/LatoLatin-Medium.woff") format("woff"),
+        url("fonts/LatoLatin-Medium.ttf") format("truetype");
+}
+/*---------------------*\
+        $STYLE
+\*---------------------*/
+::selection{
+    background-color: #fdd600;
+    color: #0d2c54;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+::-moz-selection{
+    background-color: #fdd600;
+    color: #0d2c54;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+body{
+    font-family: "lato-medium", "Helvetica", "Verdana";
+}
+    @media screen and (min-width: 320px) {
+        body {
+            font-size:calc(16px + 8 * ((100vw - 320px) / 1180));
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        body {
+            font-size:15px;
+        }
+    }
+main {
+        text-align: center;
+    }
+
+footer {
+    text-align: center;
+}
+
+textarea {
+    width: inherit;
+    max-width: 80%;
+}
+
+.ui-autocomplete { /*Limitamos el tamaño de la caja de autocompletado*/
+    max-height: 50vh;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+#diHistEst{
+    display: none;
+
+}
+#inSearch{
+    border-radius: 1em;
+}
+/*===========================*/
+/*   $LAYOUT */
+/*===========================*/
+
+@media screen and (min-device-width:601px) {
+    .my-center--marginleft{
+        margin-left:16.67%;
+        margin-right: auto;
+    }
+}
+@media screen and (min-device-width:993px) {
+    .my-center--marginleft{
+        margin-left: 8.3%;
+        margin-right: auto;
+    }
+}
+.my-margin--top{
+    margin-top:1em;
+}
+.header--abs {
+    position: absolute;
+}
+
+/*===========================*/
+/*        $MODULE */
+/*===========================*/
+
+/*---------------------*\
+        $CLASS
+\*---------------------*/
+
+.bg--construccion{
+    background-color: #0d2c54;
+
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/Pagina_en_construccion.jpg");
+    background-image: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/Pagina_en_construccion.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/Pagina_en_construccion.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+.my-burguer--01{
+    color:#ff9800;
+    background-color: #4caf50;
+}
+.my-burguer--02{
+    color:#ff9800;
+    background-color: #2196F3;
+}
+.my-burguer--03{
+    color:#ff9800;
+    background-color: #607d8b;
+}
+.my-bg--grey{
+    background-color:#f1f1f1;
+}
+.my-bg--green{
+    background-color:#8bc34a;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/mixed-green--3000x2000.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.my-bg--blue{
+    background-color:#607D8B;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/mixed-blue--2500x1875.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.my-bg--grey_orange{
+    background-color:#607D8B;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./images/wallpaper_1193092.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.w3-card-2{
+    background-color:#fff;
+}
+@media screen and (min-device-width:993px) {
+    .w3-modal{
+        padding-top:4em;
+    }
+}
+.w3-sidebar{
+    background-color: #ffc107;
+    border-right: #8bc34a solid 4px;
+}
+
+.my-burguer__dad--separations{
+    padding-top: 12px;
+    padding-left: 12px;
+}
+/*---------------------*\
+    $ANIMATION
+\*---------------------*/
